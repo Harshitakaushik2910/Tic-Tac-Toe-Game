@@ -1,0 +1,125 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+   margin:0;
+   padding: 0;
+   font-family: 'Poppins','sans-serif';
+}
+.wrapper{
+    width: 100vw;
+    height:100vh;
+    background-image: url(./assets/gradient-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.game-info{
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius:1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding:0.5rem 3rem;
+    text-align: center
+}
+.tic-tac-toe{
+      width: 90%;
+      max-width:20rem;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius:1rem;
+      border:1px solid rgba(255, 255, 255, 0.25);
+      padding: 2rem;
+      margin-top: 8rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      aspect-ratio: 1/1;
+    }
+    .box{
+          position: relative;
+          width: 100%;
+          aspect-ratio: 1/1;
+          font-size: 3rem;
+          color: white;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    .box1{
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .box2{
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .box3{
+        border-bottom: 2px solid white;
+    }
+    .box4{
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .box5{
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .box6{
+        border-bottom: 1px solid white;
+    }
+    .box7{
+        border-right: 2px solid white;
+    }  
+    .box8{
+        border-right: 2px solid white;
+    }
+
+    .btn{
+        color: white;
+        position: absolute;
+        bottom: 3rem;
+        left:50%;
+        transform:translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius:1rem;
+        border:1px solid rgba(255, 255, 255, 0.25);
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        display: none;
+    }
+    .btn.active{
+        display: flex;
+    }
+    .win{
+        background-color: rgba(0, 255, 0, 0.3);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
